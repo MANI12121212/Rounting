@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Navbar{
+  /* border-bottom: 2px solid red; */
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  top: 2px;
+  z-index: 2000;
+  background-color: white;
+}
+.top{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+}
+.buttom{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  height: 50%;
+  align-items: center;
+}
+.centerNav{
+  height: 100%;
+  width: 50%;
+}
+.centerNav ul{
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right{
+  height: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 10%;
+}
+.right button{
+  background-color: rgb(68, 63, 217);
+  height: 60%;
+  width: 8em;
+  display: flex;
+  color: aliceblue;
+  font-size: .9rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+}
+.right button:hover{
+  background-color: white;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header{
+  color: blue;
+  text-align: center;
+  font-size: 3.5rem;
+
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.card{
+  /* background-color: grey; */
+  height: 300px;
+  width: 26%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+.lnav img{
+  height: 100px;
+    width: 125px;
+    padding: 20px;
 }
